@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: db7594526c0e1cd48854a193b7f1dddc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1171119834445394570
+    second: Cactus_Shmacktus_-_Attack_1_0
+  - first:
+      213: 7627090820390720784
+    second: Cactus_Shmacktus_-_Attack_1_1
+  - first:
+      213: 2645831205109380474
+    second: Cactus_Shmacktus_-_Attack_1_2
+  - first:
+      213: -6838070384923554618
+    second: Cactus_Shmacktus_-_Attack_1_3
+  - first:
+      213: -2931909587572292634
+    second: Cactus_Shmacktus_-_Attack_1_4
+  - first:
+      213: 380575000499673567
+    second: Cactus_Shmacktus_-_Attack_1_5
+  - first:
+      213: 4586555006223153168
+    second: Cactus_Shmacktus_-_Attack_1_6
+  - first:
+      213: 2222904573494172771
+    second: Cactus_Shmacktus_-_Attack_1_7
+  - first:
+      213: -1605062893427266222
+    second: Cactus_Shmacktus_-_Attack_1_8
+  - first:
+      213: -3674354742176188213
+    second: Cactus_Shmacktus_-_Attack_1_9
+  - first:
+      213: -3526137906752663797
+    second: Cactus_Shmacktus_-_Attack_1_10
+  - first:
+      213: -2949148643916632969
+    second: Cactus_Shmacktus_-_Attack_1_11
+  - first:
+      213: 2265297307411423698
+    second: Cactus_Shmacktus_-_Attack_1_12
+  - first:
+      213: 4384387462550109538
+    second: Cactus_Shmacktus_-_Attack_1_13
+  - first:
+      213: 2707095277869129212
+    second: Cactus_Shmacktus_-_Attack_1_14
+  - first:
+      213: 6983435459791066714
+    second: Cactus_Shmacktus_-_Attack_1_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4480
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dc77627b85fbfe0800000000000000
+      internalID: -1171119834445394570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_1
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 4480
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015180be0bed8d960800000000000000
+      internalID: 7627090820390720784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75303c7671e7b420800000000000000
+      internalID: 2645831205109380474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_3
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 3840
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc438de63b4a11a0800000000000000
+      internalID: -6838070384923554618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3013793c3cf47d0800000000000000
+      internalID: -2931909587572292634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_5
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 3200
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd95d2352f2184500800000000000000
+      internalID: 380575000499673567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01878b04a77b6af30800000000000000
+      internalID: 4586555006223153168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_7
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 2560
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c16b0aee759de10800000000000000
+      internalID: 2222904573494172771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d6b1b6dcba9b9e0800000000000000
+      internalID: -1605062893427266222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_9
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 1920
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8f0dd54d1120dc0800000000000000
+      internalID: -3674354742176188213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fc7fe8144a01fc0800000000000000
+      internalID: -3526137906752663797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_11
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 1280
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c26810fe48217d0800000000000000
+      internalID: -2949148643916632969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d128e626e3ff6f10800000000000000
+      internalID: 2265297307411423698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_13
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 640
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26db9feea2978dc30800000000000000
+      internalID: 4384387462550109538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdd68affc8819520800000000000000
+      internalID: 2707095277869129212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cactus_Shmacktus_-_Attack_1_15
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 0
+        width: 3700
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5696b40d852ae060800000000000000
+      internalID: 6983435459791066714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
