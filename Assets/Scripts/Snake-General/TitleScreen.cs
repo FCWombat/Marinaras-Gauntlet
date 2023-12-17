@@ -12,9 +12,12 @@ public class TitleScreen : MonoBehaviour
     public float distanceBetweenOptions;
     public controlsManager manager;
     public AudioClip MenuInteractionClip;
+    public GameObject parent;
+
     // Start is called before the first frame update
     void Start()
     {
+        transform.SetParent(parent.transform);
         transform.position.Set(transform.position.x, transform.position.y, transform.position.z);
         MenuIterator = 1;
         manager = FindObjectOfType<controlsManager>();

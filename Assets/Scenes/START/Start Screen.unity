@@ -372,16 +372,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneNames:
   - SelectBoss
-  - Base Scene
   - IS
   - VersionNotes
   - Credits
-  - Future Plans
   MenuIterator: 0
   NumberOfOptions: 4
   distanceBetweenOptions: 0.65
   manager: {fileID: 0}
   MenuInteractionClip: {fileID: 8300000, guid: 82731a5047a6a25468a1312ae4b306fa, type: 3}
+  parent: {fileID: 1424511988}
 --- !u!212 &723861318
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -657,6 +656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1424511990}
   - component: {fileID: 1424511989}
+  - component: {fileID: 1424511991}
   m_Layer: 0
   m_Name: Snake_Title_Screen_2
   m_TagString: Untagged
@@ -729,6 +729,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1424511991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424511988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57650dbc05355f547bacebb5f90b2d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingY: 0
+  startingX: 0
+  speed: 1
+  topY: 0.1
+  bottomY: -0.15
 --- !u!1 &1868565814
 GameObject:
   m_ObjectHideFlags: 0

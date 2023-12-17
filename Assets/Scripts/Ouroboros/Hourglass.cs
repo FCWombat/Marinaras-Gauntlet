@@ -29,7 +29,7 @@ public class Hourglass : MonoBehaviour
         if (done == false)
         {
             topSand.localScale = new Vector3(X, 2f-(step * stepsTaken), Z);
-            bottomSand.localScale = new Vector3(X, 0f + (step * stepsTaken), Z);
+            bottomSand.localScale = new Vector3(X, 0.3f + (step * stepsTaken), Z);
             stepsTaken++;
             if(topSand.localScale.y <= 0)
             {
