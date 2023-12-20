@@ -6,9 +6,9 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bulletanim
+  m_Name: Mini Cactus Break
   serializedVersion: 6
-  m_Legacy: 0
+  m_Legacy: 1
   m_Compressed: 0
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
@@ -20,47 +20,40 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -3431190929832686138, guid: e8086019382d5ee4b8a533d1419bfc41, type: 3}
-    - time: 0.11666667
-      value: {fileID: -3243547700575864544, guid: e8086019382d5ee4b8a533d1419bfc41, type: 3}
-    - time: 0.21666667
-      value: {fileID: -3789594635487836472, guid: e8086019382d5ee4b8a533d1419bfc41, type: 3}
+      value: {fileID: 2963228851973223847, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+    - time: 0.083333336
+      value: {fileID: -95654636560346257, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+    - time: 0.16666667
+      value: {fileID: 5479219922743094745, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+    - time: 0.25
+      value: {fileID: 9179953488934976126, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
     - time: 0.33333334
-      value: {fileID: -3957500887309727886, guid: e8086019382d5ee4b8a533d1419bfc41, type: 3}
-    attribute: m_Sprite
+      value: {fileID: -4045948518912579937, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+    - time: 0.41666666
+      value: {fileID: -4045948518912579937, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+    attribute: activeSprite
     path: 
-    classID: 212
-    script: {fileID: 0}
+    classID: 114
+    script: {fileID: 11500000, guid: 41434e964a159c74ebc8dfc659b3f282, type: 3}
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-    pptrCurveMapping:
-    - {fileID: -3431190929832686138, guid: e8086019382d5ee4b8a533d1419bfc41, type: 3}
-    - {fileID: -3243547700575864544, guid: e8086019382d5ee4b8a533d1419bfc41, type: 3}
-    - {fileID: -3789594635487836472, guid: e8086019382d5ee4b8a533d1419bfc41, type: 3}
-    - {fileID: -3957500887309727886, guid: e8086019382d5ee4b8a533d1419bfc41, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.35000002
+    m_StopTime: 0.43333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

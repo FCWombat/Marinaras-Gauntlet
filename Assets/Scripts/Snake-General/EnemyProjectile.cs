@@ -39,7 +39,7 @@ public class EnemyProjectile : MonoBehaviour
             {
                 setAngle(180.0f);
             }
-            if (direction == Vector2.left)
+            if (direction == Vector2.right)
             {
                 setAngle(270.0f);
             }
@@ -66,12 +66,12 @@ public class EnemyProjectile : MonoBehaviour
         }
         if(other.tag == "ActiveCactus")
         {
-            other.gameObject.GetComponent<CactusObject>().health--;
+            /*other.gameObject.GetComponent<CactusObject>().health--;
             if(other.gameObject.GetComponent<CactusObject>().health == 0)
             {
                 Destroy(other.gameObject);
               
-            }
+            }*/ //Now handled by the cactus objects themselves
             Destroy(this.gameObject);
             
         }

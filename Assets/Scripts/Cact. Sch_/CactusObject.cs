@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class CactusObject : MonoBehaviour
 {
-    bool active;
+    bool everActive;
     public int health;
     public int maxHealth;
     public BoxCollider2D gridArea;
-    public int millisecondsUntilActive;
+    public int inactiveMilliseconds;
     private int framesUntilActive;
     public int instanceID;
-    public Sprite[] sprites;
+    public Sprite[] growthSprites;
+    public Sprite[] explosionSprites;
     public Sprite activeSprite;
     // Start is called before the first frame update
     void Start()
     {
         GameObject grid1 = FindObjectOfType<grid>().gameObject;
         gridArea = grid1.GetComponent<grid>().area;
-        framesUntilActive = Mathf.FloorToInt(millisecondsUntilActive * 0.1f * Time.fixedDeltaTime);
+        framesUntilActive = Mathf.FloorToInt(inactiveMilliseconds * 0.1f * Time.fixedDeltaTime);
         this.tag = "InnactiveCactus";
-        active = false;
         health = maxHealth;
+        everActive = false;
 
         this.transform.position = RandomizePosition();
     }
@@ -29,22 +30,31 @@ public class CactusObject : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float ratio = (framesUntilActive / Mathf.FloorToInt(millisecondsUntilActive * 0.1f * Time.fixedDeltaTime));
-        if (active == false)
+        //if the cactus is not active yet
+        if (everActive == false)
         {
+            //get the ratio of completed frames to incompleted frames of waiting
+            float ratio = 1.0f - (((float)framesUntilActive) / ((float)Mathf.FloorToInt(inactiveMilliseconds * 0.1f * Time.fixedDeltaTime)));
+            //Debug.Log("framesUntilActive = " + framesUntilActive + " and denom = "+ Mathf.FloorToInt(inactiveMilliseconds * 0.1f * Time.fixedDeltaTime));
+            //Debug.Log("L plus "+ratio);
+
+            //count down the current fua
             framesUntilActive--;
-            if(framesUntilActive == 0)
+            if (framesUntilActive <= 0) //if active, set sprite to active sprite
             {
-                active = true;
+                everActive = true;
                 this.tag = "ActiveCactus";
                 this.GetComponent<SpriteRenderer>().sprite = activeSprite;
             }
-            for (float i = 0; i < 7; i++)
+            else //otherwise, set sprite to one of growthSprites.Length growth sprites
             {
-                if (ratio >= (i / 7) && ratio < (i + 1 / 7))
+                for (float i = 0; i < growthSprites.Length; i++)
                 {
-                    GetComponent<SpriteRenderer>().sprite = sprites[7-(int)i];
-                    break;
+                    if (ratio >= (i / ((float)growthSprites.Length)) && ratio < ((i + 1.0f) / ((float)growthSprites.Length)))
+                    {
+                        GetComponent<SpriteRenderer>().sprite = growthSprites[(int)i];
+                        break;
+                    }
                 }
             }
         }
@@ -60,19 +70,21 @@ public class CactusObject : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //if this cactus is active AND...
         if (this.tag == "ActiveCactus")
-        {
+        {   //a projectile hits this cactus, explode and delete this cactus
             if (other.tag == "PlayerProjectile")
             {
-                if (active == false)
+                health--;
+                if (health == 0)
                 {
-                    health--;
-                    if (health == 0)
-                    {
-                        Destroy(this.gameObject);
-                    }
+                    this.tag = "InnactiveCactus"; //notably, keep "everActive" true so it doesn't start trying to grow again
+                    Debug.Log("Health was 0");
+                    //play the explosion animation, then delete the object
+                    StartCoroutine(ExplodeAndDeleteCoroutine());
                 }
             }
+            //a part of the snake is inside this cactus, cut off the snake at that segment
             if (other.tag == "Segment")
             {
                 other.gameObject.GetComponent<segment>().damaged = true;
@@ -80,8 +92,9 @@ public class CactusObject : MonoBehaviour
             }
 
         }
-        else
+        else //if the cactus is NOT YET active AND...
         {
+            //if this cactus runs into an older cactus, move this cactus
             if (other.tag == "ActiveCactus" || other.tag == "InnactiveCactus")
             {
                 if (instanceID > other.GetComponent<CactusObject>().instanceID)
@@ -91,9 +104,23 @@ public class CactusObject : MonoBehaviour
 
             }
         }
+        //in ANY case, if this cactus runs into food, move the food
         if (other.tag == "Food")
         {
             other.GetComponent<Apple>().RandomizePosition();
         }
+    }
+
+    //coroutine for playing the breakage animation:
+    IEnumerator ExplodeAndDeleteCoroutine()
+    {
+        Debug.Log("Exploding");
+
+        for (int i = 0; i < explosionSprites.Length; i++)
+        {
+            GetComponent<SpriteRenderer>().sprite = explosionSprites[i];
+            yield return new WaitForSeconds(0.075f);
+        }
+        Destroy(this.gameObject);
     }
 }

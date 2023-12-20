@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1082112051386231609}
   - component: {fileID: 1082112051386231610}
-  - component: {fileID: 1082112051386231611}
   - component: {fileID: 1082112051386231604}
   - component: {fileID: -5233177332725352892}
+  - component: {fileID: 3027726849130853709}
   m_Layer: 0
   m_Name: CactusPrefab
   m_TagString: InnactiveCactus
@@ -85,32 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1082112051386231611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1082112051386231605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41434e964a159c74ebc8dfc659b3f282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
-  maxHealth: 1
-  gridArea: {fileID: 0}
-  millisecondsUntilActive: 3000
-  instanceID: 0
-  sprites:
-  - {fileID: -1290308590801621918, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
-  - {fileID: -8277525424582343479, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
-  - {fileID: -4987614064180579314, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
-  - {fileID: -6569377198514243487, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
-  - {fileID: -5906174529787837129, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
-  - {fileID: 1078746366969729548, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
-  - {fileID: 2327614491443829033, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
-  activeSprite: {fileID: 5398912404871645752, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
 --- !u!61 &1082112051386231604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -158,3 +132,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &3027726849130853709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082112051386231605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41434e964a159c74ebc8dfc659b3f282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  maxHealth: 1
+  gridArea: {fileID: 0}
+  inactiveMilliseconds: 3000
+  instanceID: 0
+  growthSprites:
+  - {fileID: -1290308590801621918, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: -8277525424582343479, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: -4987614064180579314, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: -6569377198514243487, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: -5906174529787837129, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: 1078746366969729548, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: 2327614491443829033, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: 5398912404871645752, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  explosionSprites:
+  - {fileID: 2963228851973223847, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: -95654636560346257, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: 5479219922743094745, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: 9179953488934976126, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  - {fileID: -4045948518912579937, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  activeSprite: {fileID: 5398912404871645752, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
