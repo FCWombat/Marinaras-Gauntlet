@@ -7,16 +7,19 @@ public class SplashScreen : MonoBehaviour
 {
     public float time;
     public string NextScene;
+    public controlsManager manager;
+
     // Start is called before the first frame update
     void Start()
     {
         ChangeToScene(NextScene, time);
+        manager = FindObjectOfType<controlsManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)) {
+        if (Input.GetKeyDown(manager.startInput)) {
             SceneManager.LoadScene(NextScene);
 //            StopAllCoroutines(); //not necessary, apparently
         }

@@ -50,7 +50,13 @@ public class GameOverScreen : MonoBehaviour
         {
             switch (MenuIterator) {
                 case 1:
-                    SceneManager.LoadScene("SelectBoss");
+                    if (!(GameplayVars.Get<string>("previousScene") == null || GameplayVars.Get<string>("previousScene") == ""))
+                    {
+                        SceneManager.LoadScene(GameplayVars.Get<string>("previousScene"));
+                    }
+                    else {
+                        SceneManager.LoadScene("SelectBoss");
+                    }
                     break;
                 case 2:
                     SceneManager.LoadScene("Start Screen");

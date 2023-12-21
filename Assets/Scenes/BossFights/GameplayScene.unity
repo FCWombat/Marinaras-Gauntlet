@@ -1395,15 +1395,6 @@ MonoBehaviour:
   boss: {fileID: 1501564100}
   anger: 0
   maxAnger: 0
-  sprites:
-  - {fileID: -4313870455719507173, guid: 7714e5d21b2fa094da92300119d6a7de, type: 3}
-  - {fileID: -7008685112651820606, guid: 7714e5d21b2fa094da92300119d6a7de, type: 3}
-  - {fileID: -7894246529932835073, guid: 7714e5d21b2fa094da92300119d6a7de, type: 3}
-  - {fileID: -2758636606730267630, guid: 7714e5d21b2fa094da92300119d6a7de, type: 3}
-  - {fileID: 6141921271872202074, guid: 7714e5d21b2fa094da92300119d6a7de, type: 3}
-  - {fileID: 4318356872449048386, guid: 7714e5d21b2fa094da92300119d6a7de, type: 3}
-  - {fileID: 8143075181077245682, guid: 7714e5d21b2fa094da92300119d6a7de, type: 3}
-  - {fileID: 1433475975958413845, guid: 7714e5d21b2fa094da92300119d6a7de, type: 3}
   ratio: 0
   angerMeter: {fileID: 821393954}
 --- !u!212 &1028117371

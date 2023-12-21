@@ -382,6 +382,7 @@ public class Snake : MonoBehaviour
             ResetState();
             manager.sounder.clip = deathSound;
             manager.sounder.Play();
+            GameplayVars.Set("previousScene", ""+SceneManager.GetActiveScene().name);
             SceneManager.LoadScene(gameOverSceneName);
         }
         else
