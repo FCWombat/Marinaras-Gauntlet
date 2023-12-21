@@ -572,8 +572,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 824995227}
   m_HandleRect: {fileID: 824995226}
   m_Direction: 2
-  m_Value: 0.99166036
-  m_Size: 0.44550908
+  m_Value: 0.9916604
+  m_Size: 0.30714172
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -765,7 +765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000036015528, y: -236.69525}
+  m_AnchoredPosition: {x: 0.000036015528, y: -295.76007}
   m_SizeDelta: {x: 812.2659, y: 868.2202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1828855604
@@ -802,7 +802,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Credits\r\n\r\n\r\nCreated by: \r\nColin Gallagher, Daniel Brower, and
-    Grace Philips \r\n\r\nInstitution: Worcester Polytechnical Institute\nClass:
+    Grace Phillips \r\n\r\nInstitution: Worcester Polytechnical Institute\nClass:
     IMDG 1001-B03\nProfessor: Walt Yarborough\nTA: Josiah Boucher\n\r\nBase Game
     Tutorial:\nhttps://zigurous.com/tutorials/snake \r\n\r\n\r\nVideo Help for Credits
     and Version Notes:\r\nhttps://www.bing.com/videos/search?q=how+to+move+text+with+a+scrollbar+in+unity&view=detail&mid=9030944391FEF43ECC4D9030944391FEF43ECC4D&FORM\n\nTutorial

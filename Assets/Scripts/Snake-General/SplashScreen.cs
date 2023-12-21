@@ -16,7 +16,10 @@ public class SplashScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Return)) {
+            SceneManager.LoadScene(NextScene);
+//            StopAllCoroutines(); //not necessary, apparently
+        }
     }
     public void ChangeToScene(string sceneToChangeTo, float delay)
     {

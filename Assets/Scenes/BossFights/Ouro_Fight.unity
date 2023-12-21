@@ -2600,7 +2600,7 @@ MonoBehaviour:
   SnakeProjectilePrefab: {fileID: 7752125385444462429, guid: 9a0430db5d7ead4489c21b9b06d42ebc, type: 3}
   isPaused: 0
   konamiCode: 0
-  debugImortality: 1
+  debugImortality: 0
 --- !u!61 &1843685419
 BoxCollider2D:
   m_ObjectHideFlags: 0

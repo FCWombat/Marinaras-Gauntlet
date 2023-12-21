@@ -56,7 +56,7 @@ public class GameOverScreen : MonoBehaviour
                     SceneManager.LoadScene("Start Screen");
                     break;
                 case 3:
-                    SceneManager.LoadScene("IS");
+                    SceneManager.LoadScene("Options");
                     break;
                 default:
                     Debug.Log("Eggplant clicked past the last option of the Game Over screen menu.");
