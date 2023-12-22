@@ -722,6 +722,8 @@ MonoBehaviour:
   sounder: {fileID: 592675453}
   gridArea: {fileID: 800030459}
   big: 0
+  vertInterval: 8
+  horzInterval: 8
 --- !u!82 &592675453
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1906,7 +1908,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1022822829255870515, guid: f05a6e6a95c757d4fb7682577db7ad93, type: 3}
+  m_Sprite: {fileID: -2423347129008678221, guid: 5d33b7b187c4a3c49ade1c7621f4ee67, type: 3}
   m_Color: {r: 1, g: 0, b: 0.8655925, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2078,11 +2080,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7748275538073849923, guid: 346de7e83b3f3cc4abac0fd8e3018e42, type: 3}
       propertyPath: distanceBetweenOptions.Array.data[0]
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -7748275538073849923, guid: 346de7e83b3f3cc4abac0fd8e3018e42, type: 3}
       propertyPath: distanceBetweenOptions.Array.data[1]
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -7748275538073849923, guid: 346de7e83b3f3cc4abac0fd8e3018e42, type: 3}
       propertyPath: distanceBetweenOptions.Array.data[2]
@@ -2364,6 +2366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HourglassPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 4334410242642454744, guid: 4d41a359edea75e4ab996c6071d2f68d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 773.83
+      objectReference: {fileID: 0}
     - target: {fileID: 4334410242642454746, guid: 4d41a359edea75e4ab996c6071d2f68d, type: 3}
       propertyPath: snake
       value: 
@@ -2371,6 +2377,14 @@ PrefabInstance:
     - target: {fileID: 4334410242642454746, guid: 4d41a359edea75e4ab996c6071d2f68d, type: 3}
       propertyPath: seconds
       value: 158
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334410243113382691, guid: 4d41a359edea75e4ab996c6071d2f68d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334410243920609678, guid: 4d41a359edea75e4ab996c6071d2f68d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d41a359edea75e4ab996c6071d2f68d, type: 3}
@@ -2969,7 +2983,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3520041615100193525, guid: 75b0912dda13909438306fd982329bed, type: 3}
+  m_Sprite: {fileID: 6832520984269593187, guid: 43290023ffbd32c4293844afd7a62232, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

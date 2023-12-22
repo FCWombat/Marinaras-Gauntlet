@@ -34,6 +34,7 @@ public class pauseEggplant : MonoBehaviour
                 MenuIterator--;
                 updatePosition(true);
                 manager.sounder.clip = MenuInteractionClip;
+                manager.sounder.ignoreListenerPause = true;
                 manager.sounder.Play();
             }
         }
@@ -44,6 +45,7 @@ public class pauseEggplant : MonoBehaviour
                 MenuIterator++;
                 updatePosition(false);
                 manager.sounder.clip = MenuInteractionClip;
+                manager.sounder.ignoreListenerPause = true;
                 manager.sounder.Play();
             }
             else
@@ -60,10 +62,10 @@ public class pauseEggplant : MonoBehaviour
                     continued = true;
                     break;
                 case 2:
-                    GetComponentInParent<RealPauseMenue>().snake.GetComponent<Snake>().ResetState();
+                    //GetComponentInParent<RealPauseMenue>().snake.GetComponent<Snake>().ResetState();
                     Time.timeScale = 1;
                     AudioListener.pause = false;
-                    SceneManager.LoadScene("Options");
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                     break;
                 case 3:
                     GetComponentInParent<RealPauseMenue>().snake.GetComponent<Snake>().ResetState();

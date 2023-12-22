@@ -66,8 +66,8 @@ public class CactusObject : MonoBehaviour
         Bounds bounds = gridArea.bounds;
         float x = Random.Range(bounds.min.x, bounds.max.x);
         float y = Random.Range(bounds.min.y, bounds.max.y);
-        Debug.Log("x before round is " + x + " and y before round is " + y);
-        Debug.Log("x after round is " + (Mathf.Round(x / horzInterval) * horzInterval) + " and y after round is " + (Mathf.Round(y / vertInterval) * vertInterval));
+        //Debug.Log("x before round is " + x + " and y before round is " + y);
+        //Debug.Log("x after round is " + (Mathf.Round(x / horzInterval) * horzInterval) + " and y after round is " + (Mathf.Round(y / vertInterval) * vertInterval));
 
         //Snap it to a grid
         return new Vector2(

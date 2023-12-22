@@ -217,11 +217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7748275538073849923, guid: 346de7e83b3f3cc4abac0fd8e3018e42, type: 3}
       propertyPath: distanceBetweenOptions.Array.data[0]
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -7748275538073849923, guid: 346de7e83b3f3cc4abac0fd8e3018e42, type: 3}
       propertyPath: distanceBetweenOptions.Array.data[1]
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -7748275538073849923, guid: 346de7e83b3f3cc4abac0fd8e3018e42, type: 3}
       propertyPath: distanceBetweenOptions.Array.data[2]
@@ -945,7 +945,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3520041615100193525, guid: 75b0912dda13909438306fd982329bed, type: 3}
+  m_Sprite: {fileID: 6832520984269593187, guid: 43290023ffbd32c4293844afd7a62232, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1276,6 +1276,8 @@ MonoBehaviour:
   sounder: {fileID: 570929724}
   gridArea: {fileID: 625607656}
   big: 0
+  vertInterval: 8
+  horzInterval: 8
 --- !u!82 &570929724
 AudioSource:
   m_ObjectHideFlags: 0
