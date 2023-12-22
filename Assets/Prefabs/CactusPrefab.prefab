@@ -165,3 +165,5 @@ MonoBehaviour:
   - {fileID: 9179953488934976126, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
   - {fileID: -4045948518912579937, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
   activeSprite: {fileID: 5398912404871645752, guid: 36cab30f7654b424f8699b9d4f249a54, type: 3}
+  vertInterval: 8
+  horzInterval: 8

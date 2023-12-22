@@ -63,7 +63,7 @@ public class pauseEggplant : MonoBehaviour
                     GetComponentInParent<RealPauseMenue>().snake.GetComponent<Snake>().ResetState();
                     Time.timeScale = 1;
                     AudioListener.pause = false;
-                    SceneManager.LoadScene("IS");
+                    SceneManager.LoadScene("Options");
                     break;
                 case 3:
                     GetComponentInParent<RealPauseMenue>().snake.GetComponent<Snake>().ResetState();

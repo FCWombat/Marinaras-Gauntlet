@@ -341,7 +341,7 @@ MonoBehaviour:
   NumberOfOptions: 3
   MenuIterator: 0
   keyMapState: 0
-  MenuInteractionClip: {fileID: 0}
+  MenuInteractionClip: {fileID: 8300000, guid: 82731a5047a6a25468a1312ae4b306fa, type: 3}
 --- !u!212 &1933335775
 SpriteRenderer:
   m_ObjectHideFlags: 0

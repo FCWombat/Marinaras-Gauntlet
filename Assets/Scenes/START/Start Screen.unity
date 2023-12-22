@@ -743,7 +743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingY: 0
   startingX: 0
-  speed: 1
+  speed: 2
   topY: 0.1
   bottomY: -0.15
 --- !u!1 &1868565814
