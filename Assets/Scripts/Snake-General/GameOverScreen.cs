@@ -9,7 +9,7 @@ public class GameOverScreen : MonoBehaviour
     public float[] distanceBetweenOptions; //this modification allows there to be different distances between different options; necessary on the pause menu
     public int NumberOfOptions;
     public int MenuIterator;
-    public bool keyMapState;
+    public bool keyMapState; //THIS VARIABLE IS NEVER USED IN THIS SCRIPT???? DANIEL? WHAT THE HECK?
     public AudioClip MenuInteractionClip;
 
     // Start is called before the first frame update

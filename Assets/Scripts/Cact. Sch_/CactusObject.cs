@@ -14,8 +14,8 @@ public class CactusObject : MonoBehaviour
     public Sprite[] growthSprites;
     public Sprite[] explosionSprites;
     public Sprite activeSprite;
-    public float vertInterval = 8;
-    public float horzInterval = 8;
+    public float vertInterval = 2;
+    public float horzInterval = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,9 +70,7 @@ public class CactusObject : MonoBehaviour
         //Debug.Log("x after round is " + (Mathf.Round(x / horzInterval) * horzInterval) + " and y after round is " + (Mathf.Round(y / vertInterval) * vertInterval));
 
         //Snap it to a grid
-        return new Vector2(
-            Mathf.Round(x / horzInterval) * horzInterval,
-            Mathf.Round(y / vertInterval) * vertInterval);
+        return new Vector2(x,y);
 
     }
     private void OnTriggerEnter2D(Collider2D other)

@@ -26,7 +26,7 @@ public class pauseEggplant : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        key = KeyCode.None;
+        key = KeyCode.None; //Dan, what is this for???
         if (Input.GetKeyDown(manager.upInput))
         {
             if (MenuIterator != 1)

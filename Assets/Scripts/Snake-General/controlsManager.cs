@@ -35,6 +35,10 @@ public class controlsManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        //set unlocked levels to 1 if nothing valid is set for it yet
+        if (GameplayVars.Get<int>("unlockedLevels") != 1 && GameplayVars.Get<int>("unlockedLevels") != 2 && GameplayVars.Get<int>("unlockedLevels") != 3 && GameplayVars.Get<int>("unlockedLevels") != 4) {
+            GameplayVars.Set("unlockedLevels", 3);
+        }
     }
 
     // Update is called once per frame

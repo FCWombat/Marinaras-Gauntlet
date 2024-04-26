@@ -7,8 +7,8 @@ public class Apple : MonoBehaviour
     public AudioSource sounder;
     public BoxCollider2D gridArea;
     public bool big;
-    public float vertInterval = 8; 
-    public float horzInterval = 8;
+    public float vertInterval; 
+    public float horzInterval;
     public void RandomizePosition()
     {
         int bigChecker = Random.Range(0, 10);
@@ -40,6 +40,7 @@ public class Apple : MonoBehaviour
             Mathf.Round(x/horzInterval) * horzInterval, 
             Mathf.Round(y/vertInterval) * vertInterval,
             0.0f);
+
 
     }
     // Start is called before the first frame update

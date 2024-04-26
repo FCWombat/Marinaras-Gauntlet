@@ -375,8 +375,9 @@ MonoBehaviour:
   - Options
   - VersionNotes
   - Credits
+  - Level Select
   MenuIterator: 0
-  NumberOfOptions: 4
+  NumberOfOptions: 5
   distanceBetweenOptions: 0.65
   manager: {fileID: 0}
   MenuInteractionClip: {fileID: 8300000, guid: 82731a5047a6a25468a1312ae4b306fa, type: 3}

@@ -1183,8 +1183,8 @@ MonoBehaviour:
   sounder: {fileID: 890207150}
   gridArea: {fileID: 540679702}
   big: 0
-  vertInterval: 8
-  horzInterval: 8
+  vertInterval: 1
+  horzInterval: 1
 --- !u!82 &890207150
 AudioSource:
   m_ObjectHideFlags: 0

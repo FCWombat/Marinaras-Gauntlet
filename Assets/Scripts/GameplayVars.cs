@@ -5,6 +5,7 @@ using System.Collections.Generic;
 //problem: when the player dies and goes to the game over scene, how do I get the most-recently-loaded scene? 
 //          I want to load that scene when the user selects "try again"
 //solution: global variables in unity!
+//this also gets used to keep track of the unlocked levels for the level select scene
 
 // A simple static class to get and set globally accessible variables through a key-value approach.
 // Uses a key-value approach (dictionary) for storing and modifying variables.
@@ -13,6 +14,9 @@ public static class GameplayVars
 {
     private static readonly object lockObject = new object();
     private static Dictionary<string, object> variablesDictionary = new Dictionary<string, object>();
+    //Variables Used:
+    // - previousScene - string (name of a scene) - set by script Snake when it dies, in the "lose" method
+    // - unlockedLevels - int (1 through 4) - set by script controlsManager at the beginning and script ___ when it wins
 
     // The underlying key-value storage (dictionary).
     // <value>Gets the underlying variables dictionary</value>
