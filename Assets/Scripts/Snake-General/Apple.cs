@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Apple : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class Apple : MonoBehaviour
     public void RandomizePosition()
     {
         int bigChecker = Random.Range(0, 10);
-        big = (bigChecker == 0) ? true : false;
-        if (big)
+        big = (bigChecker == 0 && (SceneManager.GetActiveScene().name != "Tutorial")) ? true : false; // no random bigs in the tutorial
+        if (big) 
         {
             this.transform.localScale = new Vector3(30f, 30f, 1f);
         }

@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 248948361}
   - component: {fileID: 248948362}
   m_Layer: 0
-  m_Name: grid area
+  m_Name: delete this maybe - grid area
   m_TagString: GridArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,7 +401,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 248948360}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3edd933531f4623498cece95e3c2a755, type: 2}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c2791c4ab0c3784c911b03d0c1f6ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 1, y: 0}
+  direction: {x: 0, y: 1}
   gameOverSceneName: Game Over
   apple: {fileID: 1876024582}
   segments: []
@@ -750,13 +750,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521603377}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.2, y: -3.1410263, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -29, z: 0}
   m_LocalScale: {x: 2, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568321991
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,9 +996,10 @@ GameObject:
   - component: {fileID: 698731933}
   - component: {fileID: 698731932}
   - component: {fileID: 698731931}
-  - component: {fileID: 698731930}
   - component: {fileID: 698731927}
   - component: {fileID: 698731928}
+  - component: {fileID: 698731929}
+  - component: {fileID: 698731930}
   m_Layer: 0
   m_Name: Scarecrow
   m_TagString: Boss
@@ -1129,7 +1130,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &698731930
+--- !u!114 &698731929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1138,14 +1139,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 698731926}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d99b187c3065e514fb0f208bbd275f28, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e1728e3c6151044da7cea7eee335725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridArea: {fileID: 248948361}
   boss: {fileID: 698731927}
   isHit: 0
-  cactusPrefab: {fileID: 1082112051386231609, guid: 370580968e9ed95488a3d967225da791, type: 3}
-  numberofCacti: 0
+--- !u!95 &698731930
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698731926}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b15e6d5e15944e04188c585164076037, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &698731931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1163,7 +1180,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.7, y: 0.64}
+    oldSize: {x: 370, y: 64}
     newSize: {x: 37.025986, y: 6.3999996}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1232,7 +1249,7 @@ Transform:
   m_GameObject: {fileID: 698731926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 21.5, z: 0}
-  m_LocalScale: {x: 30, y: 30, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16

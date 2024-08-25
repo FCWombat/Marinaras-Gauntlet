@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level Select.unity
     guid: a78bf1fde7f133e48b49b87f77fc753e
+  - enabled: 1
+    path: Assets/Scenes/BossFights/Tutorial.unity
+    guid: c06fa1a2d95b222488a2b619cffecc18
   m_configObjects: {}

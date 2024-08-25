@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Snake : MonoBehaviour
 {
-    public Vector2 direction = Vector2.right;
+    public Vector2 direction = Vector2.up;
     private bool directionChanged;
     public string gameOverSceneName;
     public Apple apple;
@@ -338,10 +338,11 @@ public class Snake : MonoBehaviour
         {
             Transform segment = Instantiate(this.segmentPrefab);
             segments.Add(segment);
+            //segment.position = this.transform.position;
             segment.position = new Vector3(100.0f, 0.0f, 0.0f); //fixes bug with new intial segments spawning in the map rather than on the snake initially
             segment.GetComponent<segment>().segmentDirection = direction;
         }
-        this.transform.position = Vector3.zero;
+        this.transform.position = new Vector3(0.0f, -29.0f, 0.0f);
         apple.RandomizePosition();
       //  score.score = initialSize;
         segments[segments.Count - 1].GetComponent<SpriteRenderer>().sprite = tailSprite;
